@@ -14,7 +14,9 @@ const Home = () => {
       {/* Content Section */}
       <div className="flex-1 flex" style={{ fontFamily: "'Poppins', sans-serif" }}>
         {/* Text Section */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-6 bg-white">
+        <div
+          className="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-6 bg-white animate-fly-left"
+        >
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             The practice test program that will help you ace your Ontario G1
           </h1>
@@ -34,7 +36,7 @@ const Home = () => {
 
         {/* Background Image Section */}
         <div
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 animate-fly-right"
           style={{
             backgroundImage: `url(${TrafficBackground})`,
             backgroundSize: "cover",
