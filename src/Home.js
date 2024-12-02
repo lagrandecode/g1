@@ -25,13 +25,14 @@ const Home = () => {
           </p>
 
           <div className="space-y-4 w-full">
-            <Link
-              to="/quiz"
-              className="text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold py-3 px-6 rounded-lg hover:from-red-500 hover:to-red-600 shadow-md w-full sm:w-auto text-center"
-            >
-              Start free G1 practice test
-            </Link>
-          </div>
+    <Link
+    to="/quiz"
+    className="text-sm sm:text-base bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:from-red-500 hover:to-red-600 shadow-md w-full sm:w-auto text-center"
+  >
+    Start free G1 practice test
+  </Link>
+    </div>
+
         </div>
 
         {/* Background Image Section */}
