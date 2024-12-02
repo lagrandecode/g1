@@ -19,7 +19,7 @@ const Home = () => {
             The practice test program that will help you ace your Ontario G1
           </h1>
           <p className="text-lg md:text-xl mb-8 text-gray-700">
-            This is a group project developed by Humber College Student 2024.
+            This is a group project developed by Humber College Students 2024.
           </p>
 
           <div className="space-y-4">
