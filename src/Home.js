@@ -27,7 +27,7 @@ const Home = () => {
           <div className="space-y-4 w-full">
             <Link
               to="/quiz"
-              className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold py-3 px-6 rounded-lg hover:from-red-500 hover:to-red-600 shadow-md w-full sm:w-auto text-center"
+              className="text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold py-3 px-6 rounded-lg hover:from-red-500 hover:to-red-600 shadow-md w-full sm:w-auto text-center"
             >
               Start free G1 practice test
             </Link>
