@@ -39,10 +39,16 @@ const Quiz = () => {
 
   if (showResults) {
     return (
-      <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
-        <h1 className="text-3xl font-bold mb-4">Quiz Completed!</h1>
-        <p className="text-xl mb-4">Correct Answers: {correctAnswersCount}</p>
-        <p className="text-xl mb-8">Wrong Answers: {wrongAnswersCount}</p>
+      <div className="bg-gray-100 dark:bg-gray-900 min-h-screen flex flex-col items-center justify-center">
+        <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">
+          Quiz Completed!
+        </h1>
+        <p className="text-xl mb-4 text-gray-700 dark:text-gray-300">
+          Correct Answers: {correctAnswersCount}
+        </p>
+        <p className="text-xl mb-8 text-gray-700 dark:text-gray-300">
+          Wrong Answers: {wrongAnswersCount}
+        </p>
         <Link
           to="/"
           className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600"
@@ -54,23 +60,23 @@ const Quiz = () => {
   }
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center">
+    <div className="bg-gray-100 dark:bg-gray-900 min-h-screen flex flex-col items-center">
       <div className="w-full max-w-2xl p-4">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold">Quiz</h1>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Quiz</h1>
           <Link
             to="/"
-            className="text-blue-500 underline hover:text-blue-700"
+            className="text-blue-500 underline hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-400"
           >
             Back to Home
           </Link>
         </div>
 
         {quizzes.length === 0 ? (
-          <p>Loading questions...</p>
+          <p className="text-gray-700 dark:text-gray-300">Loading questions...</p>
         ) : (
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-lg font-bold mb-4">
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <h2 className="text-lg font-bold mb-4 text-gray-900 dark:text-white">
               {quizzes[currentQuestionIndex].question}
             </h2>
             {quizzes[currentQuestionIndex].images && (
@@ -96,7 +102,9 @@ const Quiz = () => {
                     }
                     className="mr-2"
                   />
-                  <label htmlFor={`option-${index}`}>{option}</label>
+                  <label htmlFor={`option-${index}`} className="text-gray-900 dark:text-white">
+                    {option}
+                  </label>
                 </li>
               ))}
             </ul>
