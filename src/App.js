@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Quiz from "./Quiz";
 import Register from "./Register"; // Import the Register component
+import Login  from "./Login";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/Login" element={<Login/>}/>
         </Routes>
       </Router>
     </div>
