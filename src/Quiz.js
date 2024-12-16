@@ -11,7 +11,7 @@ const Quiz = () => {
 
   useEffect(() => {
     axios
-      .get("http://10.0.0.63:8000/")
+      .get("https://quizappapi-0cf91e1b68f1.herokuapp.com/")
       .then((response) => {
         setQuizzes(response.data);
       })
